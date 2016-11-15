@@ -2,7 +2,8 @@
 
 A simple Node.js/Chromium desktop app, which can run on both Electron and NW.js. Useful for testing JavaScript libraries.
 
-Files:
+## Files
+
  * [`package.json`](./package.json): Installs prebuilt versions of Electron and NW.js, and configures various startup options for the app.
  * [`index.html`](./index.html): HTML file used for the app.
  * [`electron.main.js`](./electron.main.js): Script which will be executed in Electron's main process, used to start the Electron app.
