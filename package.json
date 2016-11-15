@@ -1,0 +1,24 @@
+{
+  "name": "node-desktop-quickstart",
+  "description": "A simple Node.js/Chromium desktop app, which can run on both Electron and NW.js. Useful for testing JavaScript libraries.",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.html",
+  "node-main": "nw.main.js",
+  "window": {
+    "width": 800,
+    "height": 600,
+    "position": "center"
+  },
+  "license": "MIT",
+  "author": "Benjamin Tan <demoneaux@gmail.com> (https://demoneaux.github.io/)",
+  "repository": "demoneaux/node-desktop-quickstart",
+  "scripts": {
+    "electron": "electron electron.main.js",
+    "nwjs": "nw"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "nw": "^0.18.6-sdk"
+  }
+}
