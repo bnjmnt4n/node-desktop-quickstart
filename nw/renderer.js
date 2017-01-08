@@ -4,7 +4,7 @@
 // Display DevTools. (The SDK flavour of NW.js is required.)
 nw.Window.get().showDevTools();
 
-var text =
+let text =
 `We are using Node.js ${process.versions.node},
 Chromium ${process.versions.chrome || process.versions.chromium},
 and NW.js ${process.versions.nw}.`;
