@@ -1,12 +1,12 @@
 // This file is called by `index.html` and will be executed
 // in the NW.js browser context for that window.
 
+console.log('nw/renderer.js: Executing in the NW.js browser context.');
+
 // Display DevTools. (The SDK flavour of NW.js is required.)
 nw.Window.get().showDevTools();
 
-let text =
-`We are using Node.js ${process.versions.node},
-Chromium ${process.versions.chrome || process.versions.chromium},
-and NW.js ${process.versions.nw}.`;
+let versions = process.versions;
+let text = getText('NW.js', versions.nw, versions.node, versions.chrome || versions.chromium);
 
-document.querySelector('.description').textContent = text;
+setText(text);

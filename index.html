@@ -7,14 +7,6 @@
   <body>
     <h1>Hello World!</h1>
     <div class="description"></div>
-    <script>
-      if (process.versions.electron) {
-        // This file will run in Electron's renderer process.
-        require('./electron/renderer.js');
-      } else if (process.versions.nw) {
-        // This file will be executed in NW.js's browser context.
-        document.write('<script src="nw/renderer.js"><\/script>');
-      }
-    </script>
+    <script src="renderer.js"></script>
   </body>
 </html>

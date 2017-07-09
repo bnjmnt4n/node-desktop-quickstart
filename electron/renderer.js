@@ -1,9 +1,9 @@
 // This file is required by `index.html` and will be executed
 // in the Electron renderer process for that window.
 
-let text =
-`We are using Node.js ${process.versions.node},
-Chromium ${process.versions.chrome},
-and Electron ${process.versions.electron}.`;
+console.log('electron/renderer.js: Executing in the Electron renderer process.');
 
-document.querySelector('.description').textContent = text;
+let versions = process.versions;
+let text = getText('Electron', versions.electron, versions.node, versions.chrome);
+
+setText(text);

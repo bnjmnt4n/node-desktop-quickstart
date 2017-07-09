@@ -3,22 +3,16 @@
   "description": "A simple Node.js/Chromium desktop quickstart, which can run on both Electron and NW.js.",
   "private": true,
   "version": "0.0.0",
-  "main": "index.html",
-  "node-main": "nw/main.js",
-  "window": {
-    "width": 800,
-    "height": 600,
-    "position": "center"
-  },
+  "main": "main.js",
   "license": "MIT",
   "author": "Benjamin Tan <demoneaux@gmail.com>",
-  "repository": "demoneaux/node-desktop-quickstart",
+  "repository": "bnjmnt4n/node-desktop-quickstart",
   "scripts": {
-    "electron": "electron electron/main.js",
+    "electron": "electron main.js",
     "nw": "nw"
   },
   "devDependencies": {
-    "electron": "^1.4.1",
-    "nw": "0.19.4-sdk"
+    "electron": "1.6.11",
+    "nw": "0.23.5-sdk"
   }
 }
