@@ -34,7 +34,7 @@ $ npm run nw        # Run on NW.js.
 
 ## Current Versions
 
-| Framework                             | Version      | Node  | Chromium |
-| ------------------------------------- | :----------: | :---: | :------: |
-| [Electron](https://electron.atom.io/) | 1.6.11       | 7.4.0 | 56       |
-| [NW.js](https://nwjs.io/)             | 0.23.5 (SDK) | 8.1.2 | 58       |
+| Framework                            | Version      | Node  | Chromium |
+| ------------------------------------ | :----------: | :---: | :------: |
+| [Electron](https://electronjs.org/)  | 1.7.11       | 7.9.0 | 58       |
+| [NW.js](https://nwjs.io/)            | 0.28.0 (SDK) | 9.4.0 | 64       |
