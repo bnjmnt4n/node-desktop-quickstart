@@ -6,12 +6,12 @@ A simple Node.js/Chromium desktop quickstart, which can run on both Electron and
 
  * [`package.json`](./package.json): Installs prebuilt versions of Electron and NW.js, and configures various startup options for the app.
  * [`index.html`](./index.html): HTML file used for the app.
- * [`main.js`](./main.js): First script executed in the main process, which is used to execute either `electron/main.js` or `nw/main.js`.
- * [`renderer.js`](./renderer.js): First script executed in the renderer process, which is used to execute either `electron/renderer.js` or `nw/renderer.js`. Common functions can be exposed as globals here for easy access from both Electron and NW.js.
+ * [`main.js`](./main.js): First script executed in the main process/Node context, which is used to further execute either `electron/main.js` or `nw/node.js`.
+ * [`renderer.js`](./renderer.js): First script executed in the renderer process/browser context, which is used to further execute either `electron/renderer.js` or `nw/browser.js`. Common functions can be exposed as globals here for easy access from both Electron and NW.js.
  * [`electron/main.js`](./electron/main.js): Script which will be executed in Electron's main process, used to open the first Electron window.
  * [`electron/renderer.js`](./electron/renderer.js): Script which will be executed in Electron's renderer process.
- * [`nw/main.js`](./nw/main.js): Script which will be executed in NW.js's Node context, used to open the first NW.js window.
- * [`nw/renderer.js`](./nw/renderer.js): Script which will be executed in NW.js's browser context.
+ * [`nw/node.js`](./nw/node.js): Script which will be executed in NW.js's Node context, used to open the first NW.js window.
+ * [`nw/browser.js`](./nw/browser.js): Script which will be executed in NW.js's browser context.
 
 ## Usage
 
