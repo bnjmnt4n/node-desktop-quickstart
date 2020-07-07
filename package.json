@@ -12,7 +12,7 @@
     "nw": "nw"
   },
   "devDependencies": {
-    "electron": "1.7.11",
+    "electron": "7.2.4",
     "nw": "0.28.0-sdk"
   }
 }
